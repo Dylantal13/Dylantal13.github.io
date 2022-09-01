@@ -159,16 +159,16 @@ header {
 }
 .texto{
     text-align: center;
-    margin: 100px;
+    margin: 50px;
     padding: 30px;
     color:rgba(0, 0, 0, .95);
-    min-width: 10px;
+    min-width: 100px;
 }
 .texto h3{
     font-size: 20px;
     padding: 20px;
     color:rgba(0, 0, 0, .95);
-    min-width: 10px;
+    min-width: 100px;
 }
 .video{
     text-align: center;
@@ -186,7 +186,7 @@ header {
     top: 85%;
     overflow-wrap: break-word;
     font-weight: 500;
-    min-width: 10px;
+    min-width: 100px;
     align-items: center;
     width: 100%;
 }
