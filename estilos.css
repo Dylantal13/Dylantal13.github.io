@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    min-width: 10px;
+    overflow-wrap: break-word;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://img.freepik.com/foto-gratis/montana-fuji-lago-kawaguchiko-al-atardecer-temporadas-otono-montana-fuji-yamanachi-japon_335224-1.jpg?w=1480&t=st=1661896772~exp=1661897372~hmac=06fd8b14acee154c062b390214a70841ab56947e4501acf07e2764821d159c05);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shado: 0px 0px 25px 20px;
+    z-index: 999;
+}
+.nav-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn {
+    font-size: 25px;
+    color:#fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nav-menu {
+    position:fixed;
+    width: 100%;
+    height: 0vh;
+    top:100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    padding: 5px;
+    margin: 50px 0;
+    transition: all .3s;
+}
+.nav-menu li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform:uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb(0, 174, 255);
+    transition: .3s;
+    border-bottom: 2px solid rgb(0,174, 255);
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+.banner {
+    padding: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+.banner h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    overflow-wrap: break-word;
+}
+.banner span{
+    color: rgb(0, 174, 255);
+}
+.banner h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.btn1{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: rgb(0, 174, 255);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn1:hover{
+    background-color: #fff;
+    color: rgb(0, 174, 255);
+    transition: .5s;
+}
+.btn2{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: rgb(0, 174, 255);
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn2:hover{
+    background-color: rgb(0, 174, 255);
+    color: #fff;
+    transition: .5%;
+}
+
+@media screen and (min-width: 768px){
+    .nav-header {
+        height: 100px;
+    }
+    .btn {
+        display: none;
+    }
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    .nav-menu li a {
+        font-size: 16px;
+    }
+    .banner h1 {
+        font-size: 70px;
+        margin-bottom: 30px;
+        min-width: 10px;
+    }
+    .banner h2 {
+        font-size: 40px;
+        min-width: 10px;
+    }
+}
+.texto{
+    text-align: center;
+    margin: 100px;
+    padding: 30px;
+    color:rgba(0, 0, 0, .95);
+    min-width: 10px;
+}
+.texto h3{
+    font-size: 20px;
+    padding: 20px;
+    color:rgba(0, 0, 0, .95);
+    min-width: 10px;
+}
+.video{
+    text-align: center;
+    margin-top: 40px;
+}
+.descripcion {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 30px;
+    display: inline-block;
+    justify-content: center;
+    position:relative;
+    top: 85%;
+    overflow-wrap: break-word;
+    font-weight: 500;
+    min-width: 10px;
+    align-items: center;
+    width: 100%;
+}
+.descripcion h2{
+    font-weight: 600;
+}
+.descripcion span{
+    color: rgb(0, 174, 255);
+}
+
+/*
+.ola h2{
+    text-align: center;
+    color: #fff;
+    top: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-width: 10px;
+    overflow-wrap: break-word;
+    font-size: 60px;
+} */
+.wave{
+    margin-top: 6%;
+    opacity: 100%;
+
+}
